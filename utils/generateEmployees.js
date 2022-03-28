@@ -1,4 +1,16 @@
+const fs = require('fs');
 
+// const first = "John";
+// const title = "Manager";
+// const id = "0";
+// const email = "email@email.com";
+// const officeNum = "0";
+
+const generateEmployees = data => {
+    if (!data) {
+        return '';
+    }
+    return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -13,16 +25,16 @@
     <header>
         <h1>Team Profile Generator</h1>
     </header>
-    <main id="employee-cards">
+    <main>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="primaryDetails">1</h5>
-                <p class="primaryDetails">2</p>
+                <h5 class="primaryDetails">${data.arr_0}</h5>
+                <p class="primaryDetails">${data.arr_1}</p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>ID: </b>3</li>
-                <li class="list-group-item"><b>Email: </b>4</li>
-                <li class="list-group-item"><b>Office Number: </b>5</li>
+                <li class="list-group-item"><b>ID: </b>${data.arr_2}</li>
+                <li class="list-group-item"><b>Email: </b>${data.arr_3}</li>
+                <li class="list-group-item"><b>Office Number: </b>${data.arr_4}</li>
             </ul>
       </div>
         
@@ -34,4 +46,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </html>  
-    
+    `;
+}
+
+module.exports = { generateEmployees };
