@@ -1,4 +1,6 @@
 # <b>Employee Profile</b>
+
+![Example Image of the Web Application](https://github.com/gemsjohn/employee-profile/blob/main/assets/img/demo.png)
   
 
   # <b>Table of Contents</b>
