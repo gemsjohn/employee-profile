@@ -1,4 +1,4 @@
-const Employee = require('../utils/Employee.js');
+const Employee = require('../lib/Engineer.js');
 
 test('create an employee profile', () => {
     const employee = new Employee('idenity');
