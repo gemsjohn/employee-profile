@@ -1,3 +1,3 @@
-const Tracker = require('./utils/Tracker');
+const Tracker = require('./lib/Tracker');
 
 new Tracker().initializeTracker();
